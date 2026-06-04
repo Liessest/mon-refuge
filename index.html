@@ -327,6 +327,12 @@ a{color:var(--accent)}
       <div class="tool" onclick="openTool('corps')"><div class="ic">💗</div><div class="t">Écouter mon corps</div><div class="d">Le sens possible des maux</div></div>
     </div>
 
+    <div class="section-title">🍃 Nourrir &amp; bouger</div>
+    <div class="tools">
+      <div class="tool" onclick="openTool('alimentation')"><div class="ic">🍓</div><div class="t">Alimentation douce</div><div class="d">Se nourrir avec plaisir</div></div>
+      <div class="tool" onclick="openTool('mouvement')"><div class="ic">🤸‍♀️</div><div class="t">Mouvement doux</div><div class="d">Bouger pour se sentir bien</div></div>
+    </div>
+
     <div class="section-title">🌱 Prendre soin au quotidien</div>
     <div class="tools">
       <div class="tool wide" onclick="openTool('naturo')"><div class="ic">🌼</div><div><div class="t">Naturopathie douce</div><div class="d">Hydratation, sommeil, alimentation apaisante — en invitations, jamais en règles.</div></div></div>
@@ -619,6 +625,62 @@ const TOOLS={
     <button class="btn ghost" onclick="closeSheet();go('journal');document.getElementById('note').focus()">✍️ Noter où j'en suis</button>
   </div>
   <div class="disclaimer">Cet espace s'inspire d'approches comme la théorie polyvagale et la régulation du système nerveux. C'est un soutien de mieux-être, pas un avis médical. Si ces états sont intenses, durables ou liés à un vécu difficile, un·e thérapeute (approche somatique, psychologue) peut t'accompagner avec beaucoup de douceur. Tu n'as pas à tout porter seule. 🤍</div>`},
+ alimentation:{title:"🍓 Alimentation douce",html:`
+  <p class="lead">Se nourrir, c'est prendre soin de soi — pas se contrôler. Ici, pas de régime, pas d'aliment « interdit », pas de culpabilité. Juste des invitations douces pour soutenir ton énergie et ton corps. Prends ce qui te parle. 🤍</p>
+
+  <details class="acc"><summary>Manger en pleine conscience</summary><div class="body">
+    <p>Ralentis, pose les couverts entre deux bouchées, savoure les saveurs et les textures. Écoute ta faim et ta satiété, sans règle extérieure. Manger en présence apaise aussi la digestion et le système nerveux.</p>
+  </div></details>
+
+  <details class="acc"><summary>Soutenir le corps en douceur</summary><div class="body">
+    <p><b>Des couleurs dans l'assiette</b> — légumes et fruits variés apportent ce dont le corps a besoin pour se réparer.</p>
+    <p><b>Apaiser l'inflammation</b> — les oméga-3 (poissons gras, noix, lin), le curcuma, le gingembre sont des alliés doux ; réduire l'ultra-transformé et le sucre rapide <i>quand c'est possible</i>, sans rigidité.</p>
+    <p><b>Une énergie stable</b> — associer à chaque repas un peu de protéines, de bonnes graisses et des fibres évite les montagnes russes de fatigue. Précieux quand on a tendance à l'épuisement.</p>
+  </div></details>
+
+  <details class="acc"><summary>Le ventre, ce deuxième cerveau</summary><div class="body">
+    <p>L'intestin et le système nerveux se parlent en permanence. Prendre soin de ta flore — fibres douces, aliments fermentés (yaourt, kéfir, légumes lacto-fermentés) si tu les tolères — peut soutenir ton humeur et ton calme intérieur.</p>
+  </div></details>
+
+  <details class="acc"><summary>L'hydratation</summary><div class="body">
+    <p>Un verre d'eau au réveil, des tisanes au fil de la journée. L'eau aide le corps à éliminer et à se réparer. La camomille ou la mélisse, le soir, accompagnent la détente.</p>
+  </div></details>
+
+  <details class="acc"><summary>Le plaisir compte aussi</summary><div class="body">
+    <p>Manger est aussi émotionnel, social, joyeux — et c'est sain. Aucun aliment n'est « mauvais » ; un repas réconfortant a toute sa place. L'équilibre se construit sur la durée, pas dans la perfection d'un repas. Sois douce avec toi. 🌸</p>
+  </div></details>
+
+  <div class="disclaimer">Avec des allergies ou la fibromyalgie, certains aliments demandent de l'attention. Ces pistes sont un soutien de mieux-être, pas un avis nutritionnel médical : un·e diététicien·ne ou ton médecin peut t'accompagner pour adapter tout cela à toi.</div>`},
+ mouvement:{title:"🤸‍♀️ Mouvement doux",html:`
+  <p class="lead">Bouger pour <i>se sentir bien</i>, jamais pour se punir ou « mériter » quoi que ce soit. Ton corps n'a pas à performer. L'idée : un mouvement qui respecte ton énergie et ta douleur du jour. 🤍</p>
+
+  <details class="acc"><summary>Le mouvement qui fait du bien</summary><div class="body">
+    <p>Marche lente, étirements tout doux, yoga doux, danse libre dans le salon, nage, jardinage… Choisis ce qui te donne envie, pas ce qu'il « faudrait » faire. Le meilleur mouvement, c'est celui qui te fait du bien.</p>
+  </div></details>
+
+  <details class="acc"><summary>Par petites doses (pacing)</summary><div class="body">
+    <p>Cinq minutes comptent vraiment. Plutôt que de tout donner un « bon jour » puis de s'effondrer, on garde une <b>réserve</b> : en faire un peu <i>moins</i> que ce qu'on pourrait. C'est la règle d'or quand on vit avec la fibromyalgie ou l'épuisement — fractionner, alterner effort et repos.</p>
+  </div></details>
+
+  <details class="acc"><summary>Bouger pour apaiser le système nerveux</summary><div class="body">
+    <p>Quand tu te sens <b>en alerte</b> : secouer les mains, marcher, t'étirer — pour décharger l'énergie de stress.</p>
+    <p>Quand tu te sens <b>au ralenti, figée</b> : de tout petits mouvements pour te réveiller en douceur — bouger les doigts, t'étirer comme au réveil, ouvrir une fenêtre.</p>
+  </div></details>
+
+  <details class="acc"><summary>Au fil de la journée</summary><div class="body">
+    <p><b>Le matin</b> — quelques mobilisations douces pour réveiller le corps sans le brusquer.</p>
+    <p><b>Le soir</b> — des étirements lents, une respiration longue, pour relâcher et préparer le sommeil.</p>
+  </div></details>
+
+  <details class="acc"><summary>Écouter ma douleur &amp; les jours sans</summary><div class="body">
+    <p>Apprends à distinguer l'inconfort normal du mouvement de la vraie douleur qui dit « stop » : celle-là, on la respecte, on ne force jamais.</p>
+    <p>Et les jours où le corps ne peut pas : le repos est lui aussi un mouvement vers la santé. Aucune culpabilité. Tu reprendras quand ce sera doux pour toi. 🌷</p>
+  </div></details>
+
+  <div class="row" style="margin-top:14px">
+    <button class="btn ghost" onclick="closeSheet();go('journal')">✍️ Noter mon mouvement du jour</button>
+  </div>
+  <div class="disclaimer">Avec la fibromyalgie ou des douleurs, adapte l'activité avec ton équipe soignante (médecin, kiné). Ces pistes sont un soutien de confort, pas une prescription.</div>`},
  coherence:{title:"🫧 Cohérence cardiaque",html:`
   <p class="lead">Respirer lentement et régulièrement apaise le système nerveux. Suis le cercle des yeux : il grandit quand tu inspires, il rétrécit quand tu expires.</p>
   <div class="breath-wrap">
